@@ -56,14 +56,15 @@ export default function Footer() {
   
         {/* Copyright */}
         <div className="container copyright text-center mt-4">
-          <p>
-            © <span>Copyright</span> <strong className="px-1 sitename">DonaTech</strong>{" "}
-            <span>All Rights Reserved</span>
-          </p>
-          <div className="credits">
-            Designed by <a href="#">DonaTech</a>
-          </div>
-        </div>
+    <p>
+    © <span>Copyright</span> 
+    <strong className="px-1 footer-sitename">Mfoniso Donatus</strong> 
+    <span>All Rights Reserved</span>
+  </p>
+  <div className="credits">
+    Designed by <a href="#">DonaTech</a>
+  </div>
+</div>
       </footer>
     );
   }

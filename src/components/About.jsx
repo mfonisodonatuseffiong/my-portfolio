@@ -3,15 +3,16 @@ export default function About() {
       <section id="about" className="about section">
         {/* Section Title */}
         <div className="container section-title" data-aos="fade-up">
-          <span className="subtitle">About Me</span>
-          <h2>About Me</h2>
-          <p>
-            I’m a dedicated Full Stack Developer with a strong focus on building scalable,
-            efficient, and user‑friendly web applications. My expertise lies in crafting modern
-            front‑end experiences with React.js (Vite) and developing robust back‑end systems
-            using Express.js, Node.js, and PostgreSQL. I thrive on solving complex problems,
-            optimizing performance, and turning ideas into digital solutions that make an impact.
-          </p>
+        <span className="subtitle">About Me</span>
+        <h2>About Me</h2>
+        <p>I’m a dedicated Full Stack Developer passionate about building scalable, efficient, and user‑friendly web applications. 
+        On the front end, I craft modern experiences with React.js (Vite), while on the back end I develop robust systems 
+        using Node.js, Express.js, and PostgreSQL. I thrive on solving complex problems, optimizing performance, and turning 
+        ideas into impactful digital solutions. 
+        Beyond coding, I leverage Docker and cloud platforms to ensure applications are portable, secure, and ready to grow. 
+        I believe technology should empower people, and I enjoy collaborating with teams to create products that truly make 
+        a difference.
+        </p>
         </div>
   
         <div className="container" data-aos="fade-up" data-aos-delay="100">
@@ -22,7 +23,7 @@ export default function About() {
                 <div className="profile-header">
                   <div className="profile-avatar">
                     <img
-                      src="/assets/img/profile/profile-square-3.webp"
+                      src="/assets/img/profile/pro.webp"
                       className="img-fluid"
                       alt="Mfoniso Donatus Effiong"
                     />
@@ -42,7 +43,7 @@ export default function About() {
   
                 <div className="profile-stats">
                   <div className="stat-item">
-                    <h4>20+</h4>
+                    <h4>12+</h4>
                     <p>Projects</p>
                   </div>
                   <div className="stat-item">
@@ -50,7 +51,7 @@ export default function About() {
                     <p>Years</p>
                   </div>
                   <div className="stat-item">
-                    <h4>5</h4>
+                    <h4>2</h4>
                     <p>Awards</p>
                   </div>
                 </div>
@@ -67,8 +68,10 @@ export default function About() {
                 <div className="social-connect">
                   <a href="https://www.linkedin.com/in/mfoniso-donatus"><i className="bi bi-linkedin"></i></a>
                   <a href="https://github.com/mfonisodonatuseffiong"><i className="bi bi-github"></i></a>
-                  <a href="https://twitter.com/yourhandle"><i className="bi bi-twitter"></i></a>
-                  <a href="https://instagram.com/yourhandle"><i className="bi bi-instagram"></i></a>
+                  <a href="https://twitter.com/@iamkaytwobaba"><i className="bi bi-twitter"></i></a>
+                  <a href="https://instagram.com/iamkaytwobabaofficial" target="_blank" rel="noopener noreferrer">
+                 <i className="bi bi-instagram"></i>
+                </a>
                 </div>
               </div>
             </div>
@@ -98,7 +101,7 @@ export default function About() {
                       { name: "Node.js & Express.js", percent: 90 },
                       { name: "PostgreSQL & MongoDB", percent: 85 },
                       { name: "UI/UX & Figma", percent: 80 },
-                      { name: "Docker & AWS", percent: 75 },
+                      { name: "Docker", percent: 75 },
                     ].map((skill, idx) => (
                       <div className="skill-item" key={idx}>
                         <div className="skill-info">

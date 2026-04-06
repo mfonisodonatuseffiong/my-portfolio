@@ -7,7 +7,7 @@ export default function Hero() {
   useEffect(() => {
     // Initialize Typed.js
     const typed = new Typed(".typed", {
-      strings: ["Frontend Developer", " Backend Developer", "Freelancer"],
+      strings: ["Frontend Developer", "Backend Developer", "Freelancer"],
       typeSpeed: 100,
       backSpeed: 50,
       backDelay: 2000,
@@ -27,26 +27,35 @@ export default function Hero() {
 
   return (
     <section id="hero" className="hero section dark-background">
+      {/* Right-side image */}
       <img
-        src="/assets/img/profile/pro.webp"
+        src="/assets/img/profile/pro22.webp"
         alt="Background"
         data-aos="fade-in"
       />
 
+      {/* Left-side text, vertically centered */}
       <div className="container" data-aos="fade-up" data-aos-delay="100">
-        <div className="row justify-content-center">
-          <div className="col-lg-8 text-center">
-            <h2>Hi, I'm Mfoniso Donatus</h2>
-            <p>
-              I'm a <span className="typed"></span>
-            </p>
-            <div className="social-links">
-              <a href="#"><i className="bi bi-twitter-x"></i></a>
-              <a href="#"><i className="bi bi-facebook"></i></a>
-              <a href="#"><i className="bi bi-instagram"></i></a>
-              <a href="#"><i className="bi bi-linkedin"></i></a>
-            </div>
-          </div>
+        <div className="hero-content">
+        <h2>Hi, I'm Mfoniso Donatus</h2>
+          <p>
+            I'm a <span className="typed"></span>
+        </p>
+        <div className="social-links">
+            <a href="https://twitter.com/iamkaytwobaba" target="_blank" rel="noopener noreferrer">
+            <i className="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://facebook.com/kaytwobaba" target="_blank" rel="noopener noreferrer">
+            <i className="bi bi-facebook"></i>
+            </a>
+            <a href="https://instagram.com/iamkaytwobabaofficial" target="_blank" rel="noopener noreferrer">
+            <i className="bi bi-instagram"></i>
+            </a>
+            <a href="https://linkedin.com/in/mfonisodonatus" target="_blank" rel="noopener noreferrer">
+            <i className="bi bi-linkedin"></i>
+            </a>
+    </div>
+
         </div>
       </div>
     </section>
