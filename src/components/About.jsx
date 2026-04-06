@@ -57,7 +57,7 @@ export default function About() {
                 </div>
   
                 <div className="profile-actions">
-                  <a href="/assets/docs/Mfoniso-CV.pdf" className="btn-primary">
+                  <a href="/assets/docs/Mfoniso-Donatus-CV.pdf" className="btn-primary">
                     <i className="bi bi-download"></i> Download CV
                   </a>
                   <a href="mailto:mfonisodonatuseffiong@gmail.com" className="btn-secondary">

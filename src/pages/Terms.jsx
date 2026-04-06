@@ -24,6 +24,7 @@ export default function Terms() {
           </div>
         </header>
   
+        {/* Main */}
         <main className="main">
           {/* Page Title */}
           <div className="page-title light-background">
@@ -31,177 +32,79 @@ export default function Terms() {
               <nav className="breadcrumbs">
                 <ol>
                   <li><a href="/">Home</a></li>
-                  <li className="current">Terms</li>
+                  <li className="current">Terms of Service</li>
                 </ol>
               </nav>
-              <h1>Terms</h1>
+              <h1>Terms of Service</h1>
             </div>
           </div>
   
           {/* Terms Section */}
           <section id="terms-of-service" className="terms-of-service section">
             <div className="container" data-aos="fade-up">
-  
               <div className="tos-header text-center">
-                <span className="last-updated">
-                  Last Updated: February 27, 2025
-                </span>
+                <span className="last-updated">Last Updated: February 27, 2025</span>
                 <h2>Terms of Service</h2>
-                <p>
-                  Please read these terms of service carefully before using our services
-                </p>
+                <p>Please read these terms carefully before using our services.</p>
               </div>
   
               <div className="tos-content">
-  
-                {/* Agreement */}
                 <div className="content-section">
                   <h3>1. Agreement to Terms</h3>
-                  <p>
-                    By accessing our website and services, you agree to be bound by
-                    these Terms of Service and all applicable laws.
-                  </p>
-  
-                  <div className="info-box">
-                    <i className="bi bi-info-circle"></i>
-                    <p>
-                      These terms apply to all users, visitors, and others who use
-                      our services.
-                    </p>
-                  </div>
+                  <p>By accessing our website and services, you agree to be bound by these Terms of Service.</p>
                 </div>
   
-                {/* Intellectual Property */}
                 <div className="content-section">
                   <h3>2. Intellectual Property Rights</h3>
-                  <p>
-                    Our service and its original content are protected by
-                    international copyright laws.
-                  </p>
-  
-                  <ul className="list-items">
-                    <li>All content is our exclusive property</li>
-                    <li>You may not copy or modify content</li>
-                    <li>Our trademarks may not be used</li>
-                    <li>Personal use only</li>
-                  </ul>
+                  <p>All content is our exclusive property and protected by copyright laws.</p>
                 </div>
   
-                {/* User Accounts */}
                 <div className="content-section">
                   <h3>3. User Accounts</h3>
-                  <p>
-                    When you create an account, you must provide accurate
-                    information.
-                  </p>
-  
-                  <div className="alert-box">
-                    <i className="bi bi-exclamation-triangle"></i>
-  
-                    <div className="alert-content">
-                      <h5>Important Notice</h5>
-                      <p>
-                        You are responsible for safeguarding your password.
-                      </p>
-                    </div>
-                  </div>
+                  <p>You must provide accurate information when creating an account and safeguard your password.</p>
                 </div>
   
-                {/* Prohibited */}
                 <div className="content-section">
                   <h3>4. Prohibited Activities</h3>
-  
-                  {[
-                    "Systematic retrieval of data",
-                    "Publishing malicious content",
-                    "Unauthorized framing",
-                    "Unauthorized access",
-                  ].map((item, idx) => (
-                    <div className="prohibited-item" key={idx}>
-                      <i className="bi bi-x-circle"></i>
-                      <span>{item}</span>
-                    </div>
-                  ))}
-                </div>
-  
-                {/* Disclaimer */}
-                <div className="content-section">
-                  <h3>5. Disclaimers</h3>
-  
                   <ul>
-                    <li>Service may contain errors</li>
-                    <li>Service may be interrupted</li>
-                    <li>No guaranteed accuracy</li>
-                    <li>Errors may not be corrected</li>
+                    <li>Unauthorized access</li>
+                    <li>Publishing malicious content</li>
+                    <li>Systematic retrieval of data</li>
+                    <li>Unauthorized framing</li>
                   </ul>
                 </div>
   
-                {/* Governing Law */}
                 <div className="content-section">
-                  <h3>6. Governing Law</h3>
-                  <p>
-                    These Terms are governed by the laws of Nigeria.
-                  </p>
+                  <h3>5. Disclaimer</h3>
+                  <p>Our services are provided “as is” without warranties of any kind.</p>
                 </div>
   
+                <div className="content-section">
+                  <h3>6. Governing Law</h3>
+                  <p>These Terms are governed by the laws of Nigeria.</p>
+                </div>
               </div>
   
               {/* Contact */}
               <div className="tos-contact">
-                <div className="contact-box">
-                  <i className="bi bi-envelope"></i>
-  
-                  <div>
-                    <h4>Questions About Terms?</h4>
-                    <a href="mailto:mfonisodonatus@gmail.com">
-                      Contact Support
-                    </a>
-                  </div>
-                </div>
+                <h4>Questions About Terms?</h4>
+                <p>
+                  Contact us at <a href="mailto:mfonisodonatus@gmail.com">mfonisodonatus@gmail.com</a>
+                </p>
               </div>
-  
             </div>
           </section>
         </main>
   
         {/* Footer */}
         <footer id="footer" className="footer">
-          <div className="container footer-top">
-  
-            <div className="row gy-4">
-  
-              <div className="col-lg-5 footer-about">
-                <span className="sitename">DonaTech</span>
-  
-                <p>
-                  Delivering scalable web solutions with modern technologies.
-                </p>
-              </div>
-  
-              <div className="col-lg-3 footer-contact">
-                <h4>Contact</h4>
-  
-                <p>#5 Cosmos Close, Uyo</p>
-                <p>Akwa Ibom</p>
-                <p>Nigeria</p>
-  
-                <p>
-                  <strong>Email:</strong> mfonisodonatus@gmail.com
-                </p>
-              </div>
-  
-            </div>
-  
+          <div className="container text-center">
+            <h3>DonaTech</h3>
+            <p>Delivering scalable web solutions with modern technologies.</p>
+            <p>© 2026 DonaTech. All Rights Reserved</p>
           </div>
-  
-          <div className="container text-center mt-4">
-            <p>
-              © Copyright <strong>DonaTech</strong> All Rights Reserved
-            </p>
-          </div>
-  
         </footer>
-  
       </div>
     );
   }
+  

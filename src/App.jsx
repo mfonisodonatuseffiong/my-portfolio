@@ -36,9 +36,18 @@ export default function App() {
             }
           />
 
-          {/* Extra pages mapped from old HTML files */}
+          {/* Portfolio details routes */}
           <Route path="/portfolio-details" element={<PortfolioDetails />} />
+          {/* Later you can add more specific routes like: 
+              <Route path="/portfolio/ecommerce" element={<PortfolioDetailsEcommerce />} />
+              <Route path="/portfolio/justconnect" element={<PortfolioDetailsJustConnect />} />
+              etc.
+          */}
+
+          {/* Service details */}
           <Route path="/service-details" element={<ServiceDetails />} />
+
+          {/* Legal pages */}
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
 

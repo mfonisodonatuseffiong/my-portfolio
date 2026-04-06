@@ -9,7 +9,9 @@ export default function Resume() {
             I am a Full Stack Developer with a strong foundation in backend engineering from
             ALX Holberton School, where I earned certification in Backend Software Engineering.
             Alongside my backend expertise, I have solid frontend skills with React.js (Vite),
-            enabling me to build complete, scalable web applications.
+            enabling me to build complete, scalable web applications. My academic background
+            also includes a B.Sc. in Microbiology, which strengthened my analytical and
+            problem‑solving skills.
           </p>
         </div>
   
@@ -128,6 +130,25 @@ export default function Resume() {
                         <p className="description">
                           Strengthened frontend skills with React.js (Vite), Tailwind CSS, and
                           modern JavaScript frameworks to complement backend expertise.
+                        </p>
+                      </div>
+                    </div>
+  
+                    <div className="timeline-item">
+                      <div className="timeline-marker">
+                        <i className="bi bi-book"></i>
+                      </div>
+                      <div className="timeline-content">
+                        <div className="education-meta">
+                          <span className="year-range">2015 - 2019</span>
+                          <span className="degree-level">Bachelor's Degree</span>
+                        </div>
+                        <h4>B.Sc. Microbiology</h4>
+                        <p className="institution">Cross River University of Technology</p>
+                        <p className="description">
+                          Developed strong analytical and research skills, applying scientific
+                          problem-solving approaches that complement my technical expertise in
+                          software engineering.
                         </p>
                       </div>
                     </div>
