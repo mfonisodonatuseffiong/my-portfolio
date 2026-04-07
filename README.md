@@ -1,18 +1,33 @@
-# React + Vite
+# Full‑Stack Developer building scalable apps with React & Node.js 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Mfoniso Donatus Portfolio
 
-Currently, two official plugins are available:
+This is my personal developer portfolio built with **React + Vite**.  
+It showcases my skills, projects, and services, and provides recruiters and clients with easy ways to connect.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
+- Responsive design (mobile‑friendly)
+- Hero section with animated roles and social links
+- Services and portfolio showcase
+- Contact form integrated with Formspree (for Vercel deployment)
+- Deployed on Vercel
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🛠️ Tech Stack
+- **Frontend:** React, Vite, Bootstrap, AOS (animations), Typed.js
+- **Deployment:** Vercel
+- **Form Handling:** Formspree
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Setup Instructions
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/mfonisodonatuseffiong/portfolio.git
+cd portfolio
+npm install
+npm run dev
