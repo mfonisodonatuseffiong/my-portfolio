@@ -8,8 +8,8 @@ export default async function handler(req, res) {
 
     try {
       await resend.emails.send({
-        from: "portfolio@yourdomain.com",   // ✅ must be a verified sender in Resend
-        to: "mfonisodonatus@gmail.com",     // ✅ my receiving email
+        from: "kaytwobaba@gmail.com",   // ✅ verified sender (Resend tied to GitHub login)
+        to: "kaytwobaba@gmail.com",     // ✅ receiving email (same Gmail for now)
         subject: subject || `New contact from ${name}`,
         html: `
           <p><strong>Name:</strong> ${name}</p>

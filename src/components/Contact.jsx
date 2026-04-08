@@ -7,9 +7,14 @@ export default function Contact() {
     subject: "",
     message: "",
   });
+  const [status, setStatus] = useState("");
+  const [loading, setLoading] = useState(false); // ✅ track loading state
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+    setStatus("Sending...");
+
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -17,10 +22,17 @@ export default function Contact() {
         body: JSON.stringify(formData),
       });
       const data = await res.json();
-      alert(data.message);
-      setFormData({ name: "", email: "", subject: "", message: "" }); // reset form
+
+      if (data.success) {
+        setStatus("✅ Message sent successfully!");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        setStatus("❌ Failed to send message. Please try again.");
+      }
     } catch (error) {
-      alert("Failed to send message. Please try again later.");
+      setStatus("❌ Error sending message. Please try again later.");
+    } finally {
+      setLoading(false); // ✅ stop spinner
     }
   };
 
@@ -141,10 +153,36 @@ export default function Contact() {
                   <button
                     type="submit"
                     className="btn btn-accent w-100 w-sm-auto"
+                    disabled={loading} // ✅ disable while sending
                   >
-                    Send Message
+                    {loading ? (
+                      <>
+                        <span
+                          className="spinner-border spinner-border-sm me-2"
+                          role="status"
+                          aria-hidden="true"
+                        ></span>
+                        Sending...
+                      </>
+                    ) : (
+                      "Send Message"
+                    )}
                   </button>
                 </div>
+
+                {/* ✅ Feedback message */}
+                {status && (
+                  <div className="col-md-12 text-center mt-3">
+                    <p
+                      style={{
+                        color: status.startsWith("✅") ? "green" : "red",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      {status}
+                    </p>
+                  </div>
+                )}
               </div>
             </form>
           </div>
