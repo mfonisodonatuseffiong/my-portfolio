@@ -59,7 +59,7 @@ export default function Footer() {
               <h4>Contact Me</h4>
               <p>5 Cosmos Close, Uyo</p>
               <p>Akwa Ibom State, Nigeria</p>
-              <p className="mt-4"><strong>Phone:</strong> <span>+234806819955</span></p>
+              <p className="mt-4"><strong>Phone:</strong> <span>+2348068199955</span></p>
               <p><strong>Email:</strong> <span>mfonisodonatus@gmail.com</span></p>
             </div>
           </div>

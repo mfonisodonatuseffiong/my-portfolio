@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [mobileActive, setMobileActive] = useState(false);
+
+  const toggleMobileNav = () => {
+    setMobileActive(!mobileActive);
+    document.body.classList.toggle("mobile-nav-active", !mobileActive);
+  };
+
   return (
     <header id="header" className="header d-flex align-items-center fixed-top">
       <div className="container-fluid container-xl position-relative d-flex align-items-center">
@@ -11,7 +19,7 @@ export default function Navbar() {
         </Link>
 
         {/* Navigation Menu */}
-        <nav id="navmenu" className="navmenu">
+        <nav id="navmenu" className={`navmenu ${mobileActive ? "mobile-nav-active" : ""}`}>
           <ul>
             <li><a href="#hero" className="active">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -20,11 +28,15 @@ export default function Navbar() {
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          {/* Toggle icon */}
+          <i
+            className={`mobile-nav-toggle d-xl-none bi ${mobileActive ? "bi-x" : "bi-list"}`}
+            onClick={toggleMobileNav}
+          ></i>
         </nav>
 
         {/* Call-to-action button */}
-        <a className="btn-getstarted" href="#about">Get Started</a>
+        <a className="btn-getstarted" href="#about">Get In Touch</a>
       </div>
     </header>
   );

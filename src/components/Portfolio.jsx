@@ -39,23 +39,23 @@ export default function Portfolio() {
             >
               {[
                 {
-                  img: "/assets/img/portfolio/ecommerce-ui.webp",
+                  img: "/assets/img/portfolio/EasyShop.webp",
                   category: "Web Application",
-                  title: "E‑Commerce Platform",
+                  title: "EasyShop",
                   tags: ["React", "Node.js", "PostgreSQL", "UI/UX"],
                   year: "2025",
                   filter: "filter-web",
                 },
                 {
-                  img: "/assets/img/portfolio/justconnect-ui.webp",
+                  img: "/assets/img/portfolio/GoNow3.webp",
                   category: "Web Application",
-                  title: "JustConnect",
+                  title: "GoNow Flight Management",
                   tags: ["React", "Node.js", "PostgreSQL", "Cloud"],
                   year: "2025",
                   filter: "filter-web",
                 },
                 {
-                  img: "/assets/img/portfolio/portfolio-ui.webp",
+                  img: "/assets/img/portfolio/port.webp",
                   category: "Personal Project",
                   title: "Portfolio Website",
                   tags: ["React", "Vite", "UI/UX"],

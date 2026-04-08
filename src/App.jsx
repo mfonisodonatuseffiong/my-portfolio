@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Helmet } from "react-helmet"; // ✅ SEO support
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -18,6 +20,28 @@ import NotFound from "./pages/NotFound"; // <-- must have `export default` in No
 export default function App() {
   return (
     <Router>
+      {/* ✅ SEO Meta Tags */}
+      <Helmet>
+        <title>Mfoniso Donatus | Portfolio</title>
+        <meta
+          name="description"
+          content="Portfolio of Mfoniso Donatus showcasing projects, skills, and contact information."
+        />
+        <meta
+          name="keywords"
+          content="Mfoniso Donatus, portfolio, web developer, projects, contact"
+        />
+        <meta name="author" content="Mfoniso Donatus" />
+        <meta property="og:title" content="Mfoniso Donatus | Portfolio" />
+        <meta
+          property="og:description"
+          content="Portfolio of Mfoniso Donatus showcasing projects, skills, and contact information."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourdomain.vercel.app/" />
+        <meta property="og:image" content="/preview.png" />
+      </Helmet>
+
       <Navbar />
       <main className="main">
         <Routes>
@@ -31,18 +55,13 @@ export default function App() {
                 <Resume />
                 <Services />
                 <Portfolio />
-                <Contact />
+                <Contact /> {/* ✅ Contact section includes your ContactForm */}
               </>
             }
           />
 
           {/* Portfolio details routes */}
           <Route path="/portfolio-details" element={<PortfolioDetails />} />
-          {/* Later you can add more specific routes like: 
-              <Route path="/portfolio/ecommerce" element={<PortfolioDetailsEcommerce />} />
-              <Route path="/portfolio/justconnect" element={<PortfolioDetailsJustConnect />} />
-              etc.
-          */}
 
           {/* Service details */}
           <Route path="/service-details" element={<ServiceDetails />} />

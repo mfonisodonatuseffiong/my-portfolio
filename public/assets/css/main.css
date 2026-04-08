@@ -167,6 +167,9 @@ h6 {
   margin-left: 30px;
   border-radius: 50px;
   transition: 0.3s;
+  white-space: nowrap;     /* prevents wrapping */
+  display: inline-block;   /* keeps it on one line */
+  text-align: center;
 }
 
 .header .btn-getstarted:hover,
@@ -184,6 +187,8 @@ h6 {
     order: 2;
     margin: 0 15px 0 0;
     padding: 6px 15px;
+    font-size: 16px;       /* readability on mobile */
+    align-self: center;    /* centers button in mobile menu */
   }
 
   .header .navmenu {
@@ -241,7 +246,7 @@ h6 {
     font-size: 16px;
     font-family: var(--nav-font);
     font-weight: 600;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: space-between;
     white-space: nowrap;
@@ -806,116 +811,187 @@ section,
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  padding-top: 80px; /* matches header height */
-  min-height: 100vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* text left */
-  overflow: hidden;
-  padding-bottom: 80px;
-  background-color: #000; /* same as header */
+  padding-top: 80px !important; /* matches header height */
+  min-height: 100vh !important;
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: #000 !important;
+  overflow: hidden !important;
 }
 
-.hero img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 55%;        /* large right-side image */
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-  opacity: 0.9;      /* blend into black */
-  background-color: #000; /* ensures edges blend */
-}
-
-.hero:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* overlay for smooth blending */
-  z-index: 2;
-}
-
-.hero .container {
-  position: relative;
-  z-index: 3;
-  max-width: 600px;
-  text-align: left;
-  color: #fff;
+.hero .container-fluid {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  z-index: 2 !important;
+  position: relative !important;
 }
 
 .hero .hero-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  white-space: nowrap; /* keeps "Hi, I'm Mfoniso Donatus" on one line */
+  flex: 1 !important;
+  max-width: 600px !important;
+  color: #fff !important;
+  display: flex !important;
+  flex-direction: column !important;
+  text-align: center !important;
+  justify-content: center !important;
+  position: relative !important;
+  z-index: 3 !important;
+  margin: auto !important;          /* ✅ center vertically */
+  margin-right: -100px !important;   /* ✅ overlap into image */
+  position: absolute !important;
+  left: 20% !important;
 }
 
 .hero h2 {
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
+  margin: 0 !important;
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  white-space: nowrap !important;
 }
 
 .hero p {
-  margin: 10px 0 0 0;
-  font-size: 24px;
-  color: #ccc;
+  margin: 10px 0 0 0 !important;
+  font-size: 24px !important;
+  color: #ccc !important;
 }
 
 .hero p span {
-  color: var(--accent-color);
-  letter-spacing: 1px;
-  border-bottom: 2px solid var(--accent-color);
+  color: var(--accent-color) !important;
+  letter-spacing: 1px !important;
+  border-bottom: 2px solid var(--accent-color) !important;
 }
 
+/* Social Links */
 .hero .social-links {
-  margin-top: 30px;
-  display: flex;
-  gap: 15px;
+  margin-top: 30px !important;
+  display: flex !important;
+  gap: 15px !important;
 }
 
 .hero .social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  font-size: 20px;
-  transition: 0.3s;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+  font-size: 20px !important;
+  transition: 0.3s !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
 }
 
 .hero .social-links a:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  transform: translateY(-3px);
+  background: var(--accent-color) !important;
+  color: var(--contrast-color) !important;
+  transform: translateY(-3px) !important;
 }
 
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 32px;
-    white-space: normal; /* allow wrapping on small screens */
+/* Hero Actions */
+.hero .hero-actions a {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+}
+
+.hero .hero-actions a:hover {
+  background: var(--accent-color) !important;
+  color: var(--contrast-color) !important;
+}
+
+/* Hero Image */
+.hero img.img-fluid {
+  flex: 1 !important;
+  max-width: 750px !important;       /* ✅ bigger image */
+  height: auto !important;
+  object-fit: cover !important;
+  margin-top: -230px !important;     /* ✅ push image closer to nav */
+  margin-left: 280px !important;      /* ✅ push image further right */
+  border-radius: 8px !important;
+  z-index: 1 !important;
+}
+
+.hero:before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  z-index: 0 !important;
+}
+
+/*--------------------------------------------------------------
+# Hero Section - Mobile
+--------------------------------------------------------------*/
+@media (max-width: 991px) {
+  .hero {
+    flex-direction: column !important;
+    text-align: center !important;
+    position: relative !important;
+    padding-top: 60px !important; /* ✅ balanced spacing under nav */
   }
 
-  .hero p {
-    font-size: 20px;
+  .hero .container-fluid {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: relative !important;
+    width: 100% !important;
   }
 
   .hero img {
-    width: 100%; /* full width on mobile */
-    opacity: 0.6; /* softer blend */
+    max-width: 100% !important;
+    height: auto !important;
+    opacity: 0.35 !important;       /* ✅ slightly dimmer for readability */
+    margin-top: 0 !important;
+    border-radius: 0 !important;    /* ✅ full‑width hero look */
+  }
+
+  .hero .hero-content {
+    position: absolute !important;        
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 2 !important;
+    color: #fff !important;
+    padding: 0 20px !important;
+    text-align: center !important;
+    width: 100% !important;         /* ✅ ensures text scales nicely */
+    max-width: 600px !important;    /* ✅ keeps text readable */
+    margin: 0 auto !important;
+  }
+
+  .hero h2 {
+    font-size: 28px !important;     /* ✅ slightly smaller for mobile */
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    margin-bottom: 15px !important;
+  }
+
+  .hero p {
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 20px !important;
+    color: #ddd !important;
+  }
+
+  .hero .social-links {
+    justify-content: center !important;
+    margin-top: 20px !important;
   }
 }
+
+
+
 
 
 /*--------------------------------------------------------------
@@ -4328,6 +4404,3 @@ footer .credits a {
 footer .credits a:hover {
   color: #fff;
 }
-
-
-

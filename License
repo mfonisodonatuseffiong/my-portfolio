@@ -1,0 +1,35 @@
+
+---
+
+### 📌 Notes
+- The **tagline at the very top** (“Full‑Stack Developer building scalable apps with React & Node.js 🚀”) immediately tells recruiters what you do.  
+- The **License section** doesn’t need a folder — just add a `LICENSE` file at the root (like README). For MIT, you can copy the standard MIT text. GitHub will automatically recognize it.  
+- With this README, your repo looks professional, recruiter‑friendly, and polished.  
+
+---
+
+👉 Next step: create/replace your `README.md` at the root, commit, and push. Then add a `LICENSE` file if you want GitHub to show your project as MIT licensed.  
+
+Would you like me to generate the **MIT License file text** for you so you can drop it into a `LICENSE` file at the root alongside your README?
+
+MIT License
+
+Copyright (c) 2026 Mfoniso Donatus
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

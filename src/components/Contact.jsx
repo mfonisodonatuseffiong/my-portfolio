@@ -1,4 +1,29 @@
+import { useState } from "react";
+
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json();
+      alert(data.message);
+      setFormData({ name: "", email: "", subject: "", message: "" }); // reset form
+    } catch (error) {
+      alert("Failed to send message. Please try again later.");
+    }
+  };
+
   return (
     <section id="contact" className="contact section">
       {/* Section Title */}
@@ -6,8 +31,8 @@ export default function Contact() {
         <span className="subtitle">Contact</span>
         <h2>Contact</h2>
         <p>
-          Interested in working together or have a project in mind? Feel free to reach out
-          through any of the channels below.
+          Interested in working together or have a project in mind? Feel free to
+          reach out through any of the channels below.
         </p>
       </div>
 
@@ -31,7 +56,9 @@ export default function Contact() {
               </div>
               <div>
                 <h3>Call Me</h3>
-                <p><a href="tel:+234806819955">+234806819955</a></p>
+                <p>
+                  <a href="tel:+2348068199955">+2348068199955</a>
+                </p>
               </div>
             </div>
 
@@ -41,21 +68,18 @@ export default function Contact() {
               </div>
               <div>
                 <h3>Email Me</h3>
-                <p><a href="mailto:mfonisodonatus@gmail.com">mfonisodonatus@gmail.com</a></p>
+                <p>
+                  <a href="mailto:mfonisodonatus@gmail.com">
+                    mfonisodonatus@gmail.com
+                  </a>
+                </p>
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
           <div className="col-lg-8 col-md-12">
-            <form 
-              name="contact" 
-              method="POST" 
-              data-netlify="true" 
-              netlify-honeypot="bot-field" 
-              className="php-email-form"
-            >
-              <input type="hidden" name="form-name" value="contact" />
+            <form onSubmit={handleSubmit} className="php-email-form">
               <div className="row gy-4">
                 <div className="col-md-6">
                   <input
@@ -63,6 +87,10 @@ export default function Contact() {
                     name="name"
                     className="form-control"
                     placeholder="Your Name"
+                    value={formData.name}
+                    onChange={(e) =>
+                      setFormData({ ...formData, name: e.target.value })
+                    }
                     required
                   />
                 </div>
@@ -73,6 +101,10 @@ export default function Contact() {
                     name="email"
                     className="form-control"
                     placeholder="Your Email"
+                    value={formData.email}
+                    onChange={(e) =>
+                      setFormData({ ...formData, email: e.target.value })
+                    }
                     required
                   />
                 </div>
@@ -83,6 +115,10 @@ export default function Contact() {
                     name="subject"
                     className="form-control"
                     placeholder="Subject"
+                    value={formData.subject}
+                    onChange={(e) =>
+                      setFormData({ ...formData, subject: e.target.value })
+                    }
                     required
                   />
                 </div>
@@ -93,12 +129,19 @@ export default function Contact() {
                     className="form-control"
                     rows="6"
                     placeholder="Message"
+                    value={formData.message}
+                    onChange={(e) =>
+                      setFormData({ ...formData, message: e.target.value })
+                    }
                     required
                   ></textarea>
                 </div>
 
                 <div className="col-md-12 text-center">
-                  <button type="submit" className="btn btn-accent w-100 w-sm-auto">
+                  <button
+                    type="submit"
+                    className="btn btn-accent w-100 w-sm-auto"
+                  >
                     Send Message
                   </button>
                 </div>
