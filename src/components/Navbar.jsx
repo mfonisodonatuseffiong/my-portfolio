@@ -9,6 +9,12 @@ export default function Navbar() {
     document.body.classList.toggle("mobile-nav-active", !mobileActive);
   };
 
+  // ✅ Close mobile nav when a link is clicked
+  const closeMobileNav = () => {
+    setMobileActive(false);
+    document.body.classList.remove("mobile-nav-active");
+  };
+
   return (
     <header id="header" className="header d-flex align-items-center fixed-top">
       <div className="container-fluid container-xl position-relative d-flex align-items-center">
@@ -21,12 +27,12 @@ export default function Navbar() {
         {/* Navigation Menu */}
         <nav id="navmenu" className={`navmenu ${mobileActive ? "mobile-nav-active" : ""}`}>
           <ul>
-            <li><a href="#hero" className="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#hero" className="active" onClick={closeMobileNav}>Home</a></li>
+            <li><a href="#about" onClick={closeMobileNav}>About</a></li>
+            <li><a href="#resume" onClick={closeMobileNav}>Resume</a></li>
+            <li><a href="#services" onClick={closeMobileNav}>Services</a></li>
+            <li><a href="#portfolio" onClick={closeMobileNav}>Portfolio</a></li>
+            <li><a href="#contact" onClick={closeMobileNav}>Contact</a></li>
           </ul>
           {/* Toggle icon */}
           <i
@@ -36,7 +42,7 @@ export default function Navbar() {
         </nav>
 
         {/* Call-to-action button */}
-        <a className="btn-getstarted" href="#about">Get In Touch</a>
+        <a className="btn-getstarted" href="#about" onClick={closeMobileNav}>Get In Touch</a>
       </div>
     </header>
   );

@@ -8,7 +8,7 @@ export default function Contact() {
     message: "",
   });
   const [status, setStatus] = useState("");
-  const [loading, setLoading] = useState(false); // ✅ track loading state
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -16,11 +16,13 @@ export default function Contact() {
     setStatus("Sending...");
 
     try {
-      const res = await fetch("/api/contact", {
+      // ✅ Point to your Express backend
+      const res = await fetch("http://localhost:5000/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
+
       const data = await res.json();
 
       if (data.success) {
@@ -32,13 +34,12 @@ export default function Contact() {
     } catch (error) {
       setStatus("❌ Error sending message. Please try again later.");
     } finally {
-      setLoading(false); // ✅ stop spinner
+      setLoading(false);
     }
   };
 
   return (
     <section id="contact" className="contact section">
-      {/* Section Title */}
       <div className="container section-title" data-aos="fade-up">
         <span className="subtitle">Contact</span>
         <h2>Contact</h2>
@@ -153,7 +154,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     className="btn btn-accent w-100 w-sm-auto"
-                    disabled={loading} // ✅ disable while sending
+                    disabled={loading}
                   >
                     {loading ? (
                       <>
@@ -170,7 +171,6 @@ export default function Contact() {
                   </button>
                 </div>
 
-                {/* ✅ Feedback message */}
                 {status && (
                   <div className="col-md-12 text-center mt-3">
                     <p
