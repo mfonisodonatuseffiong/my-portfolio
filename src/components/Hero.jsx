@@ -81,7 +81,7 @@ export default function Hero() {
               <div className="hero-actions d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
                 <a href="#portfolio" className="btn btn-accent" role="button">View My Work</a>
                 <a 
-                  href="/assets/docs/Mfoniso-Donatus-CV.pdf" 
+                  href="/assets/docs/Mfoniso_Donatus_CV_Remote.pdf" 
                   download="Mfoniso-Donatus-CV.pdf" 
                   className="btn btn-secondary" 
                   role="button"
