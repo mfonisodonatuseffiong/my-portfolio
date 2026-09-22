@@ -69,7 +69,7 @@ export default function Hero() {
                 <a href="https://instagram.com/iamkaytwobabaofficial" target="_blank" rel="noopener noreferrer">
                   <i className="bi bi-instagram fs-4"></i>
                 </a>
-                <a href="https://linkedin.com/in/mfonisodonatus" target="_blank" rel="noopener noreferrer">
+                <a href="https://linkedin.com/in/mfoniso-donatus-b4a23b402" target="_blank" rel="noopener noreferrer">
                   <i className="bi bi-linkedin fs-4"></i>
                 </a>
                 <a href="https://github.com/mfonisodonatuseffiong" target="_blank" rel="noopener noreferrer">
@@ -82,7 +82,7 @@ export default function Hero() {
                 <a href="#portfolio" className="btn btn-accent" role="button">View My Work</a>
                 <a 
                   href="/assets/docs/Mfoniso_Donatus_CV_Remote.pdf" 
-                  download="Mfoniso-Donatus-CV.pdf" 
+                  download="Mfoniso-Donatus-CV-Remote.pdf" 
                   className="btn btn-secondary" 
                   role="button"
                 >
