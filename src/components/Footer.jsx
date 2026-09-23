@@ -22,7 +22,7 @@ export default function Footer() {
                 <a href="https://instagram.com/iamkaytwobabaofficial" target="_blank" rel="noopener noreferrer">
                   <i className="bi bi-instagram"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/mfoniso-donatus" target="_blank" rel="noopener noreferrer">
+                <a href="https://linkedin.com/in/mfoniso-donatus-b4a23b402" target="_blank" rel="noopener noreferrer">
                   <i className="bi bi-linkedin"></i>
                 </a>
                 <a href="https://github.com/mfonisodonatuseffiong" target="_blank" rel="noopener noreferrer">
@@ -57,8 +57,8 @@ export default function Footer() {
             {/* Contact */}
             <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
               <h4>Contact Me</h4>
-              <p>5 Cosmos Close, Uyo</p>
-              <p>Akwa Ibom State, Nigeria</p>
+              <p>Lagos</p>
+              <p>Nigeria</p>
               <p className="mt-4"><strong>Phone:</strong> <span>+2348068199955</span></p>
               <p><strong>Email:</strong> <span>mfonisodonatus@gmail.com</span></p>
             </div>

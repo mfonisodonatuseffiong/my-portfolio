@@ -79,8 +79,8 @@ const ServiceDetails = () => {
                       </ul>
 
                       <div className="cta-buttons">
-                        <a href="#" className="btn-primary">Start Project</a>
-                        <a href="#" className="btn-secondary">Schedule Call</a>
+                        <a href="mailto:mfonisodonatus@gmail.com?subject=Project%20Inquiry" className="btn-primary">Start Project</a>
+                        <a href="/#contact" className="btn-secondary">Schedule Call</a>
                       </div>
                     </div>
                   </div>
@@ -93,7 +93,7 @@ const ServiceDetails = () => {
                       <a href="mailto:mfonisodonatus@gmail.com" className="contact-item">
                         <i className="bi bi-envelope"></i> mfonisodonatus@gmail.com
                       </a>
-                      <a href="tel:+234806819955" className="contact-item">
+                      <a href="tel:+2348068199955" className="contact-item">
                         <i className="bi bi-telephone"></i> +234806819955
                       </a>
                     </div>
@@ -123,7 +123,7 @@ const ServiceDetails = () => {
                     <div className="tech-stack">
                       <span>React</span>
                       <span>Node</span>
-                      <span>MongoDB</span>
+                      <span>PostgreSQL</span>
                     </div>
                   </div>
                 </div>
