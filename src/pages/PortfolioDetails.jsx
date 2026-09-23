@@ -37,21 +37,21 @@ export default function PortfolioDetails() {
             <nav className="breadcrumbs">
               <ol>
                 <li><a href="/">Home</a></li>
-                <li className="current">Portfolio Details</li>
+                <li className="current">UyoFood</li>
               </ol>
             </nav>
-            <h1>Portfolio Details</h1>
+            <h1>UyoFood — Live Food Ordering Platform</h1>
           </div>
         </div>
 
         {/* Portfolio Details */}
         <section id="portfolio-details" className="portfolio-details section">
           <div className="container section-title" data-aos="fade-up">
-            <span className="subtitle">Portfolio Details</span>
-            <h2>Portfolio Details</h2>
+            <span className="subtitle">Case Study</span>
+            <h2>UyoFood</h2>
             <p>
-              Here’s a closer look at one of my featured projects, highlighting
-              the design, development, and technical implementation.
+              A closer look at UyoFood — a live, revenue-generating food-ordering platform
+              I independently designed, built, deployed, and continue to operate.
             </p>
           </div>
 
@@ -66,72 +66,50 @@ export default function PortfolioDetails() {
                   spaceBetween={30}
                   slidesPerView={1}
                 >
-                  {[
-                    "/assets/img/portfolio/ecommerce-ui.webp",
-                    "/assets/img/portfolio/justconnect-ui.webp",
-                    "/assets/img/portfolio/portfolio-ui.webp",
-                    "/assets/img/portfolio/cloudapp-ui.webp",
-                  ].map((img, idx) => (
-                    <SwiperSlide key={idx}>
-                      <img src={img} alt={`Project ${idx + 1}`} className="img-fluid" />
-                    </SwiperSlide>
-                  ))}
+                  <SwiperSlide>
+                    <img src="/assets/img/portfolio/uyofood.png" alt="UyoFood screenshot" className="img-fluid" />
+                  </SwiperSlide>
                 </Swiper>
 
                 {/* Content */}
                 <div className="portfolio-content" data-aos="fade-up" data-aos-delay="200">
-                  <h2>Innovative Digital Platform</h2>
+                  <h2>Live Food Ordering Platform</h2>
 
                   <div className="meta-info">
-                    <span className="date"><i className="bi bi-calendar"></i> March 15, 2025</span>
-                    <span className="category"><i className="bi bi-tag"></i> Web Development</span>
-                    <span className="client"><i className="bi bi-building"></i> DonaTech Solutions</span>
+                    <span className="date"><i className="bi bi-calendar"></i> 2026 – Present</span>
+                    <span className="category"><i className="bi bi-tag"></i> Full-Stack Web Application</span>
+                    <span className="client"><i className="bi bi-building"></i> Independent / Self-Directed</span>
                   </div>
 
                   <p>
-                    This project involved building a responsive, scalable web
-                    platform with advanced authentication and real-time data
-                    synchronization.
+                    UyoFood connects real customers and restaurants for online food ordering.
+                    I designed, built, deployed, and now operate the platform end to end —
+                    including a live restaurant partner and real paying customers.
                   </p>
 
                   <h3>Project Overview</h3>
                   <p>
-                    The platform was designed to deliver seamless user
-                    experiences, optimized performance, and a comprehensive
-                    admin dashboard.
+                    The platform handles the full order lifecycle: browsing, checkout, secure
+                    payment, and real-time order tracking — backed by production infrastructure
+                    I configured and maintain myself, including the domain, DNS, and hosting.
                   </p>
 
                   <div className="highlights-box">
                     <h4>Key Highlights</h4>
                     <ul>
-                      <li><i className="bi bi-check-circle"></i> Responsive design</li>
-                      <li><i className="bi bi-check-circle"></i> Authentication system</li>
-                      <li><i className="bi bi-check-circle"></i> Real-time sync</li>
-                      <li><i className="bi bi-check-circle"></i> Fast performance</li>
-                      <li><i className="bi bi-check-circle"></i> Admin dashboard</li>
+                      <li><i className="bi bi-check-circle"></i> Paystack payments with server-side verification and webhook processing</li>
+                      <li><i className="bi bi-check-circle"></i> Real-time order tracking with Socket.io</li>
+                      <li><i className="bi bi-check-circle"></i> JWT authentication, Helmet, CSP, and rate limiting</li>
+                      <li><i className="bi bi-check-circle"></i> Custom domain, DNS, and production hosting configured end to end</li>
+                      <li><i className="bi bi-check-circle"></i> Live incident response — traced and resolved a production network outage</li>
                     </ul>
                   </div>
 
                   <h3>Technical Implementation</h3>
                   <p>
-                    Built with React, Node.js and PostgreSQL using modern scalable
-                    architecture.
+                    Built with React.js, Node.js, Express.js, and PostgreSQL (Neon), with
+                    Paystack for payments and Socket.io for real-time updates.
                   </p>
-
-                  <blockquote>
-                    <i className="bi bi-quote quote-icon"></i>
-                    <p>
-                      "Working with DonaTech delivered an exceptional digital
-                      platform beyond expectations."
-                    </p>
-                    <div className="author">
-                      <img src="/assets/img/person/person-m-7.webp" alt="Author" />
-                      <div className="author-info">
-                        <h5>Michael Anderson</h5>
-                        <span>Project Lead</span>
-                      </div>
-                    </div>
-                  </blockquote>
                 </div>
               </div>
 
@@ -141,11 +119,11 @@ export default function PortfolioDetails() {
                   {/* Project Info */}
                   <div className="info-card">
                     <h3>Project Details</h3>
-                    <div className="info-item"><span className="label">Client</span><span className="value">DonaTech</span></div>
-                    <div className="info-item"><span className="label">Category</span><span className="value">Web Development</span></div>
-                    <div className="info-item"><span className="label">Duration</span><span className="value">8 Weeks</span></div>
-                    <div className="info-item"><span className="label">Technologies</span><span className="value">React, Node.js, PostgreSQL</span></div>
-                    <a href="https://example.com" className="btn-primary" target="_blank" rel="noreferrer">
+                    <div className="info-item"><span className="label">Client</span><span className="value">Independent</span></div>
+                    <div className="info-item"><span className="label">Category</span><span className="value">Food Ordering Platform</span></div>
+                    <div className="info-item"><span className="label">Status</span><span className="value">Live, in production</span></div>
+                    <div className="info-item"><span className="label">Technologies</span><span className="value">React, Node.js, Express, PostgreSQL</span></div>
+                    <a href="https://www.uyofood.com" className="btn-primary" target="_blank" rel="noreferrer">
                       <i className="bi bi-box-arrow-up-right"></i> View Live Project
                     </a>
                   </div>
@@ -154,9 +132,9 @@ export default function PortfolioDetails() {
                   <div className="share-card">
                     <h3>Share</h3>
                     <div className="social-links">
-                      <a href="#"><i className="bi bi-facebook"></i></a>
-                      <a href="#"><i className="bi bi-twitter"></i></a>
-                      <a href="#"><i className="bi bi-linkedin"></i></a>
+                      <a href="https://www.facebook.com/sharer/sharer.php?u=https://my-portfolio-n6rg.vercel.app" target="_blank" rel="noreferrer"><i className="bi bi-facebook"></i></a>
+                      <a href="https://twitter.com/intent/tweet?url=https://my-portfolio-n6rg.vercel.app" target="_blank" rel="noreferrer"><i className="bi bi-twitter"></i></a>
+                      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://my-portfolio-n6rg.vercel.app" target="_blank" rel="noreferrer"><i className="bi bi-linkedin"></i></a>
                     </div>
                   </div>
                 </div>
@@ -172,9 +150,8 @@ export default function PortfolioDetails() {
           <h3>DonaTech</h3>
           <p>Delivering scalable web solutions with modern technologies.</p>
           <div className="social-links">
-            <a href="#"><i className="bi bi-twitter"></i></a>
-            <a href="#"><i className="bi bi-facebook"></i></a>
-            <a href="#"><i className="bi bi-linkedin"></i></a>
+            <a href="https://linkedin.com/in/mfoniso-donatus-b4a23b402" target="_blank" rel="noreferrer"><i className="bi bi-linkedin"></i></a>
+            <a href="https://github.com/mfonisodonatuseffiong" target="_blank" rel="noreferrer"><i className="bi bi-github"></i></a>
           </div>
           <p className="mt-3">© 2026 DonaTech. All Rights Reserved</p>
         </div>
