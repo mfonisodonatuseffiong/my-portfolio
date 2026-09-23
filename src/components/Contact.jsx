@@ -59,7 +59,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3>Address</h3>
-                <p>Akwa Ibom State, Nigeria</p>
+                <p>Nigeria</p>
               </div>
             </div>
 
