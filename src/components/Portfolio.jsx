@@ -38,7 +38,7 @@ export default function Portfolio() {
           >
             {[
               {
-                img: "/assets/img/portfolio/uyofood.png",
+                img: "/assets/img/portfolio/uyofood2.webp",
                 category: "Live Production Platform",
                 title: "UyoFood",
                 tags: ["React", "Node.js", "PostgreSQL", "Paystack", "Socket.io"],
@@ -68,7 +68,7 @@ export default function Portfolio() {
                 linkLabel: "View on GitHub",
               },
               {
-                img: "/assets/img/portfolio/port.webp",
+                img: "/assets/img/portfolio/do.webp",
                 category: "Personal Project",
                 title: "Portfolio Website",
                 tags: ["React", "Vite", "UI/UX"],
