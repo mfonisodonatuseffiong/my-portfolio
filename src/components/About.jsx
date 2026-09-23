@@ -77,7 +77,7 @@ export default function About() {
                       { name: "React.js (Vite)", percent: 95 },
                       { name: "Node.js & Express.js", percent: 90 },
                       { name: "PostgreSQL", percent: 85 },
-                      { name: "UI/UX & Figma", percent: 80 },
+                      { name: "UI/UX", percent: 80 },
                       { name: "Docker", percent: 75 },
                     ].map((skill, idx) => (
                       <div className="skill-item" key={idx}>
