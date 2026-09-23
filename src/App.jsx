@@ -38,8 +38,7 @@ export default function App() {
           content="Portfolio of Mfoniso Donatus showcasing projects, skills, and contact information."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.vercel.app/" />
-        <meta property="og:image" content="/preview.png" />
+        <meta property="og:url" content="https://my-portfolio-n6rg.vercel.app/" />
       </Helmet>
 
       <Navbar />

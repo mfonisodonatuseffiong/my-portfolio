@@ -31,44 +31,21 @@ export default function About() {
                   </div>
                   <h3>Mfoniso Donatus Effiong</h3>
                   <span className="role">Full Stack Developer</span>
-                  <div className="rating">
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-half"></i>
-                    <span>4.8</span>
-                  </div>
-                </div>
-  
-                <div className="profile-stats">
-                  <div className="stat-item">
-                    <h4>12+</h4>
-                    <p>Projects</p>
-                  </div>
-                  <div className="stat-item">
-                    <h4>3+</h4>
-                    <p>Years</p>
-                  </div>
-                  <div className="stat-item">
-                    <h4>2</h4>
-                    <p>Awards</p>
-                  </div>
                 </div>
   
                 <div className="profile-actions">
                   <a href="/assets/docs/Mfoniso_Donatus_CV_Remote.pdf" className="btn-primary">
                     <i className="bi bi-download"></i> Download CV
                   </a>
-                  <a href="mailto:mfonisodonatuseffiong@gmail.com" className="btn-secondary">
+                  <a href="mailto:mfonisodonatus@gmail.com" className="btn-secondary">
                     <i className="bi bi-envelope"></i> Contact
                   </a>
                 </div>
   
                 <div className="social-connect">
-                  <a href="https://www.linkedin.com/in/mfoniso-donatus"><i className="bi bi-linkedin"></i></a>
+                  <a href="https://linkedin.com/in/mfoniso-donatus-b4a23b402"><i className="bi bi-linkedin"></i></a>
                   <a href="https://github.com/mfonisodonatuseffiong"><i className="bi bi-github"></i></a>
-                  <a href="https://twitter.com/@iamkaytwobaba"><i className="bi bi-twitter"></i></a>
+                  <a href="https://twitter.com/iamkaytwobaba"><i className="bi bi-twitter"></i></a>
                   <a href="https://instagram.com/iamkaytwobabaofficial" target="_blank" rel="noopener noreferrer">
                  <i className="bi bi-instagram"></i>
                 </a>
@@ -99,7 +76,7 @@ export default function About() {
                     {[
                       { name: "React.js (Vite)", percent: 95 },
                       { name: "Node.js & Express.js", percent: 90 },
-                      { name: "PostgreSQL & MongoDB", percent: 85 },
+                      { name: "PostgreSQL", percent: 85 },
                       { name: "UI/UX & Figma", percent: 80 },
                       { name: "Docker", percent: 75 },
                     ].map((skill, idx) => (

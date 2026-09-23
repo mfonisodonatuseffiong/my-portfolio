@@ -75,7 +75,7 @@ export default function Privacy() {
                 If you have any questions about this Privacy Policy, please reach out to us at:
                 <br />
                 <strong>Email:</strong> mfonisodonatus@gmail.com <br />
-                <strong>Phone:</strong> +234806819955
+                <strong>Phone:</strong> +2348068199955
               </p>
             </div>
           </section>
@@ -94,10 +94,10 @@ export default function Privacy() {
                   for innovation.
                 </p>
                 <div className="social-links d-flex mt-4">
-                  <a href="#"><i className="bi bi-twitter-x"></i></a>
-                  <a href="#"><i className="bi bi-facebook"></i></a>
-                  <a href="#"><i className="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/mfoniso-donatus"><i className="bi bi-linkedin"></i></a>
+                  <a href="https://twitter.com/iamkaytwobaba" target="_blank" rel="noopener noreferrer"><i className="bi bi-twitter-x"></i></a>
+                  <a href="https://facebook.com/kaytwobaba" target="_blank" rel="noopener noreferrer"><i className="bi bi-facebook"></i></a>
+                  <a href="https://instagram.com/iamkaytwobabaofficial" target="_blank" rel="noopener noreferrer"><i className="bi bi-instagram"></i></a>
+                  <a href="https://linkedin.com/in/mfoniso-donatus-b4a23b402"><i className="bi bi-linkedin"></i></a>
                 </div>
               </div>
   
@@ -125,10 +125,9 @@ export default function Privacy() {
   
               <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                 <h4>Contact Me</h4>
-                <p>#5 Cosmos Close, Uyo</p>
-                <p>Akwa Ibom State</p>
+                <p>Lagos</p>
                 <p>Nigeria</p>
-                <p className="mt-4"><strong>Phone:</strong> <span>+234806819955</span></p>
+                <p className="mt-4"><strong>Phone:</strong> <span>+2348068199955</span></p>
                 <p><strong>Email:</strong> <span>mfonisodonatus@gmail.com</span></p>
               </div>
             </div>
